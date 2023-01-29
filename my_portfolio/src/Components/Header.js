@@ -8,6 +8,9 @@ const header = () => {
       <header>
         <div>
           <li>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
             <Link to="/my_info">내 소개</Link>
           </li>
           <li>
