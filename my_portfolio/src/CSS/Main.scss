@@ -1,10 +1,31 @@
 .Main{
     width: 100%;
 }
-.banners{
-  width: 100%;
 
-  div img{
-    width: 100%;
+
+section{
+  border-top: 1px solid #cecece;
+  background-color: #fafbfc;
+}
+
+section:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+
+  .text-container{
+    flex: 1;
+    text-align: center;
   }
+
+  .img-container{
+    flex: 1;
+    text-align: center;
+
+    img{
+      width: 380px;
+    }
+  }
+ 
 }
