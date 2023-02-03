@@ -8,9 +8,8 @@ const header = () => {
       <header>
         <div className="inner_container">
           <div className="logo">
-            <img src="img/logos/main_logo.jpg" alt="main_logo" />
+            <p>yejin's portfolio</p>
           </div>
-
           <div className="navigation">
             <li>
               <Link to="/">HOME</Link>
@@ -28,8 +27,17 @@ const header = () => {
               <Link to="/studied">공부한 것</Link>
             </li>
           </div>
-          {/* 언어 변경 박스 */}
-          <div></div>
+          <div className="lang-box">
+            <a href="/">
+              <img src="/img/icons/korea_flag.png" alt="korea flag" />
+            </a>
+            <a href="/">
+              <img src="/img/icons/usa_flag.png" alt="USA flag" />
+            </a>
+            <a href="/">
+              <img src="/img/icons/japan_flag.png" alt="Japan flag" />
+            </a>
+          </div>
         </div>
       </header>
     </div>

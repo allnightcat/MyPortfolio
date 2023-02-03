@@ -9,9 +9,11 @@ header{
 
         .logo{
             width: 300px;
-            line-height: 100px;
-            img{
-                height: 30px;
+            p{
+                font-size: 22px;
+                font-style: oblique;
+                margin: 0;
+                line-height: 100px;
             }
         }
     
@@ -21,6 +23,7 @@ header{
             display: flex;
             justify-content: center;
             line-height: 100px;
+            flex: 1;
         
             li{
                 list-style:none;
@@ -29,6 +32,18 @@ header{
                     text-decoration: none;
                     color: #000;
                     font-weight: 700;
+                }
+            }
+        }
+
+        div.lang-box{
+            line-height: 100px;
+            margin: 0 40px;
+            a{
+                img{
+                    width: 20px;
+                    height: 20px;
+                    margin: 3px;
                 }
             }
         }
