@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/Header.scss";
 import { Link } from "react-router-dom";
+import DropdownMenu from "./DropdownMenu";
+import MenuDataList from "../Assets/MenuData.json";
 
-const header = () => {
+const Header = () => {
   return (
     <div>
       <header>
@@ -11,21 +13,16 @@ const header = () => {
             <p>yejin's portfolio</p>
           </div>
           <div className="navigation">
-            <li>
-              <Link to="/">HOME</Link>
-            </li>
-            <li>
-              <Link to="/my_info">내 소개</Link>
-            </li>
-            <li>
-              <Link to="/project/work">프로젝트(회사)</Link>
-            </li>
-            <li>
-              <Link to="/project/personal">프로젝트(개인)</Link>
-            </li>
-            <li>
-              <Link to="/studied">공부한 것</Link>
-            </li>
+            {MenuDataList.map((item, index) => {
+              return (
+                <div key={index}>
+                  <li>
+                    <Link to={item.link}>{item.name}</Link>
+                  </li>
+                  <DropdownMenu submenu={item.submenu} />
+                </div>
+              );
+            })}
           </div>
           <div className="lang-box">
             <a href="/">
@@ -44,4 +41,4 @@ const header = () => {
   );
 };
 
-export default header;
+export default Header;

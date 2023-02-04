@@ -14,9 +14,9 @@ function RoutesBox() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Main />} />
         <Route path="/my_info" element={<MyInfo />} />
-        <Route path="/project/work" element={<WorkProject />} />
-        <Route path="/project/personal" element={<PersonalProject />} />
-        <Route path="/studied" element={<Studied />} />
+        <Route path="/project/work/now" element={<WorkProject />} />
+        <Route path="/project/personal/web" element={<PersonalProject />} />
+        <Route path="/studied/books" element={<Studied />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
     </Routes>

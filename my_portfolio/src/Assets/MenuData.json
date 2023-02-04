@@ -1,0 +1,60 @@
+[
+    {
+      "name": "HOME",
+      "link": "/",
+      "submenu": {}
+    },
+    {
+      "name": "내 소개",
+      "link": "/my_info",
+      "submenu": [
+        {
+          "sub_name": "소개",
+          "sub_link": "/my_info"
+        },
+        {
+          "sub_name": "경험",
+          "sub_link": "/my_info/experience"
+        },
+        {
+          "sub_name": "관심 분야",
+          "sub_link": "/my_info/interest"
+        }
+      ]
+    },
+    {
+      "name": "프로젝트(회사)",
+      "link": "/project/work/now",
+      "submenu": [
+        {
+          "sub_name": "2022 ~ 현재",
+          "sub_link": "/project/work/now"
+        }
+      ]
+    },
+    {
+      "name": "프로젝트(개인)",
+      "link": "/project/personal/web",
+      "submenu": [
+        {
+          "sub_name": "웹 서비스",
+          "sub_link": "/project/personal/web"
+        }
+      ]
+    },
+    {
+      "name": "공부한 것",
+      "link": "/studied/books",
+      "submenu": [
+        {
+          "sub_name": "IT 도서",
+          "sub_link": "/studied/books"
+        },
+        {
+          "sub_name": "온라인 강의",
+          "sub_link": "/studied/lectures"
+        }
+      ]
+    }
+  ]
+  

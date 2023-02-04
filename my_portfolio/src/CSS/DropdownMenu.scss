@@ -1,0 +1,26 @@
+.DropdownMenu{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #cecece;
+    border-top: none;
+    border-radius: 5px;
+
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            font-weight: 500;
+            margin: 5px;
+            line-height: normal;
+            padding: 5px 0;
+            width: 150px;
+        }
+
+        li:hover{
+            background-color: #f1f1f1;
+            color: #6c63ff;
+        }
+    }
+}
