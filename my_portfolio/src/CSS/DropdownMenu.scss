@@ -14,13 +14,19 @@
             font-weight: 500;
             margin: 5px;
             line-height: normal;
-            padding: 5px 0;
-            width: 150px;
+            padding: 5px 0 5px 30px;
+            width: 120px;
+            text-align: left;
         }
 
         li:hover{
             background-color: #f1f1f1;
             color: #6c63ff;
+        }
+
+        a{
+            text-decoration: none;
+            
         }
     }
 }

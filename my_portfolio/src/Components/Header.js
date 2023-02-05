@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
 import "../CSS/Header.scss";
 import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import MenuDataList from "../Assets/MenuData.json";
+import { useState } from "react";
 
 const Header = () => {
   return (
@@ -13,13 +13,15 @@ const Header = () => {
             <p>yejin's portfolio</p>
           </div>
           <div className="navigation">
-            {MenuDataList.map((item, index) => {
+            {MenuDataList.map((item) => {
               return (
-                <div key={index}>
+                <div key={item.id}>
                   <li>
                     <Link to={item.link}>{item.name}</Link>
                   </li>
-                  <DropdownMenu submenu={item.submenu} />
+                  {item.display ? (
+                    <DropdownMenu submenu={item.submenu} />
+                  ) : null}
                 </div>
               );
             })}
