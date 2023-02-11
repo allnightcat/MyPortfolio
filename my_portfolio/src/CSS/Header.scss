@@ -1,64 +1,58 @@
-header{
-    background-color: #fff;
-    height: 80px;
-    text-align: center;
-    font-size: 1.8rem;
-    border-bottom: 1px solid #cecece;
+header {
+  background-color: #fff;
+  height: 80px;
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #cecece;
 
-    .inner_container{
-        display: flex;
+  .inner_container {
+    display: flex;
 
-        .logo{
-            width: 300px;
-            p{
-                font-size: 22px;
-                font-style: oblique;
-                margin: 0;
-                line-height: 80px;
-            }
-        }
-    
-        div.navigation{
-            height: 80px;
-            font-size: 1rem;
-            display: flex;
-            justify-content: center;
-            line-height: 80px;
-            flex: 1;
-        
-            div > li{
-                list-style:none;
-                margin: 0 15px;
-                > a{
-                    text-decoration: none;
-                    color: #000;
-                    padding: 10px;
-                    font-weight: 700;
-                }
-            }
-
-            div > li:hover > a{
-                color: #6c63ff;
-                border-radius: 5px;
-            }
-        }
-
-
-        div.lang-box{
-            line-height: 80px;
-            margin: 0 40px;
-            a{
-                img{
-                    width: 20px;
-                    height: 20px;
-                    margin: 3px;
-                }
-            }
-        }
-        
+    .logo {
+      width: 300px;
+      p {
+        font-size: 22px;
+        font-style: oblique;
+        margin: 0;
+        line-height: 80px;
+      }
     }
 
+    div.navigation {
+      height: 80px;
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      line-height: 80px;
+      flex: 1;
 
-   
-    
+      div > li {
+        list-style: none;
+        margin: 0 15px;
+        > a {
+          text-decoration: none;
+          color: #000;
+          padding: 10px;
+          font-weight: 700;
+        }
+      }
+
+      div > li:hover > a {
+        color: #6c63ff;
+        border-radius: 5px;
+      }
+    }
+
+    div.lang-box {
+      line-height: 80px;
+      margin: 0 40px;
+      a {
+        img {
+          width: 20px;
+          height: 20px;
+          margin: 3px;
+        }
+      }
+    }
+  }
 }

@@ -1,77 +1,76 @@
 [
-    {
-      "id": 1,
-      "name": "HOME",
-      "link": "/",
-      "display": false,
-      "submenu": []
-    },
-    {
-      "id": 2,
-      "name": "내 소개",
-      "link": "/my_info",
-      "display": true,
-      "submenu": [
-        {
-          "id": "sb1",
-          "sub_name": "소개",
-          "sub_link": "/my_info"
-        },
-        {
-          "id": "sb2",
-          "sub_name": "경험",
-          "sub_link": "/my_info/experience"
-        },
-        {
-          "id": "sb3",
-          "sub_name": "관심 분야",
-          "sub_link": "/my_info/interest"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "프로젝트(회사)",
-      "link": "/project/work/now",
-      "display": false,
-      "submenu": [
-        {
-          "id": "sb1",
-          "sub_name": "2022~현재",
-          "sub_link": "/project/work/now"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "프로젝트(개인)",
-      "link": "/project/personal/web",
-      "display": false,
-      "submenu": [
-        {
-          "id": "sb2",
-          "sub_name": "웹 서비스",
-          "sub_link": "/project/personal/web"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "공부한 것",
-      "link": "/studied/books",
-      "display": false,
-      "submenu": [
-        {
-          "id": "sb1",
-          "sub_name": "IT 도서",
-          "sub_link": "/studied/books"
-        },
-        {
-          "id": "sb2",
-          "sub_name": "온라인 강의",
-          "sub_link": "/studied/lectures"
-        }
-      ]
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "HOME",
+    "link": "/",
+    "display": false,
+    "submenu": []
+  },
+  {
+    "id": 2,
+    "name": "내 소개",
+    "link": "/my_info",
+    "display": false,
+    "submenu": [
+      {
+        "id": "sb1",
+        "sub_name": "소개",
+        "sub_link": "/my_info"
+      },
+      {
+        "id": "sb2",
+        "sub_name": "경험",
+        "sub_link": "/my_info/experience"
+      },
+      {
+        "id": "sb3",
+        "sub_name": "관심 분야",
+        "sub_link": "/my_info/interest"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "프로젝트(회사)",
+    "link": "/project/work/now",
+    "display": false,
+    "submenu": [
+      {
+        "id": "sb1",
+        "sub_name": "2022~현재",
+        "sub_link": "/project/work/now"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "프로젝트(개인)",
+    "link": "/project/personal/web",
+    "display": false,
+    "submenu": [
+      {
+        "id": "sb2",
+        "sub_name": "웹 서비스",
+        "sub_link": "/project/personal/web"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "공부한 것",
+    "link": "/studied/books",
+    "display": false,
+    "submenu": [
+      {
+        "id": "sb1",
+        "sub_name": "IT 도서",
+        "sub_link": "/studied/books"
+      },
+      {
+        "id": "sb2",
+        "sub_name": "온라인 강의",
+        "sub_link": "/studied/lectures"
+      }
+    ]
+  }
+]

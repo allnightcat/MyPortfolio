@@ -2,9 +2,35 @@ import "../CSS/Header.scss";
 import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import MenuDataList from "../Assets/MenuData.json";
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 const Header = () => {
+  const [menus, setMenus] = useState(MenuDataList);
+  const onDisplay = useCallback(
+    (id) => {
+      setMenus(
+        menus.map((menu) =>
+          menu.id === id
+            ? { ...menu, display: true }
+            : { ...menu, display: false }
+        )
+      );
+      console.log(id, "show!");
+    },
+    [menus]
+  );
+  const onUnDisplay = useCallback(
+    (id) => {
+      setMenus(
+        menus.map((menu) =>
+          menu.id === id ? { ...menu, display: false } : menu
+        )
+      );
+      console.log(id, "hide!");
+    },
+    [menus]
+  );
+
   return (
     <div>
       <header>
@@ -13,15 +39,19 @@ const Header = () => {
             <p>yejin's portfolio</p>
           </div>
           <div className="navigation">
-            {MenuDataList.map((item) => {
+            {menus.map((item) => {
               return (
                 <div key={item.id}>
-                  <li>
+                  <li
+                    className="menu-list-item"
+                    onMouseOver={() => onDisplay(item.id)}
+                    onMouseOut={() => onUnDisplay(item.id)}
+                  >
                     <Link to={item.link}>{item.name}</Link>
+                    {item.display ? (
+                      <DropdownMenu submenu={item.submenu} />
+                    ) : null}
                   </li>
-                  {item.display ? (
-                    <DropdownMenu submenu={item.submenu} />
-                  ) : null}
                 </div>
               );
             })}

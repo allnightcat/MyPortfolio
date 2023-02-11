@@ -1,17 +1,13 @@
-import React from "react";
 import "../CSS/DropdownMenu.scss";
 import { Link } from "react-router-dom";
 
 const DropdownMenu = ({ submenu }) => {
-  submenu.map((item) => {
-    console.log(item.sub_name);
-  });
   return (
-    <div id={submenu.id} className="DropdownMenu">
+    <div className="DropdownMenu">
       <ul>
         {submenu.map((item) => {
           return (
-            <Link to={item.sub_link}>
+            <Link to={item.sub_link} key={item.id}>
               <li key={item.id}>{item.sub_name}</li>
             </Link>
           );
