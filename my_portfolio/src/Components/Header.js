@@ -25,6 +25,7 @@ const Header = () => {
           menu.id === id ? { ...menu, display: false } : menu
         )
       );
+      console.log("test");
     },
     [menus]
   );
