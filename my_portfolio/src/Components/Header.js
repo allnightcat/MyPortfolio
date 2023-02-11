@@ -15,7 +15,6 @@ const Header = () => {
             : { ...menu, display: false }
         )
       );
-      console.log(id, "show!");
     },
     [menus]
   );
@@ -26,7 +25,6 @@ const Header = () => {
           menu.id === id ? { ...menu, display: false } : menu
         )
       );
-      console.log(id, "hide!");
     },
     [menus]
   );
