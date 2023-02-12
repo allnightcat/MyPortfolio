@@ -25,7 +25,6 @@ const Header = () => {
           menu.id === id ? { ...menu, display: false } : menu
         )
       );
-      console.log("test");
     },
     [menus]
   );
@@ -65,6 +64,32 @@ const Header = () => {
             <a href="/">
               <img src="/img/icons/japan_flag.png" alt="Japan flag" />
             </a>
+          </div>
+          <div className="hamburder-menu">
+            <div className="menu-icon">
+              <img src="/img/icons/mobile_menu.png " alt="메뉴 열기" />
+            </div>
+            <div className="mobile-menu-list">
+              <div className="mobile-lang-box">
+                <a href="/">
+                  <img src="/img/icons/korea_flag.png" alt="korea flag" />
+                </a>
+                <a href="/">
+                  <img src="/img/icons/usa_flag.png" alt="USA flag" />
+                </a>
+                <a href="/">
+                  <img src="/img/icons/japan_flag.png" alt="Japan flag" />
+                </a>
+              </div>
+              <div className="mobile-menu-box">
+                <div className="mobile-menu-1">Home</div>
+                <div className="mobile-menu-1">내 소개</div>
+                <div className="mobile-menu-2 menu-group-1">내 소개 1</div>
+                <div className="mobile-menu-2 menu-group-1">내 소개 2</div>
+                <div className="mobile-menu-2 menu-gorup-1">내 소개 3</div>
+                <div className="mobile-menu-1">프로젝트</div>
+              </div>
+            </div>
           </div>
         </div>
       </header>

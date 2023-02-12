@@ -1,29 +1,56 @@
-.Main{
-    width: 100%;
+@import "./utils.scss";
+
+.Main {
+  width: 100%;
 }
 
-section{
+section {
   background-color: #fafbfc;
 }
 
-section:nth-child(1){
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px 0;
-
-  .text-container{
-    flex: 1;
-    text-align: center;
+@include mobile {
+  .text-container .texts p {
+    background-color: crimson;
   }
+}
 
-  .img-container{
-    flex: 1;
-    text-align: center;
+@include tablet {
+  .text-container .texts p {
+    background-color: orange;
+  }
+}
 
-    img{
-      width: 450px;
+@include desktop {
+  section:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+
+    .text-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+
+      h3 {
+        font-size: 2.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+        margin: 10px 0;
+      }
+    }
+
+    .img-container {
+      flex: 1;
+      text-align: center;
+
+      img {
+        max-width: 550px;
+      }
     }
   }
- 
 }
