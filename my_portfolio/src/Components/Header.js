@@ -82,12 +82,35 @@ const Header = () => {
                 </a>
               </div>
               <div className="mobile-menu-box">
-                <div className="mobile-menu-1">Home</div>
-                <div className="mobile-menu-1">내 소개</div>
-                <div className="mobile-menu-2 menu-group-1">내 소개 1</div>
-                <div className="mobile-menu-2 menu-group-1">내 소개 2</div>
-                <div className="mobile-menu-2 menu-gorup-1">내 소개 3</div>
-                <div className="mobile-menu-1">프로젝트</div>
+                {menus.map((menu) => {
+                  return (
+                    <div className="mobile-menu" key={menu.id}>
+                      {menu.submenu.length === 0 ? (
+                        <Link to={menu.link} className="main-menu one-menu">
+                          {menu.name}
+                        </Link>
+                      ) : (
+                        <div className="main-menu">{menu.name}</div>
+                      )}
+
+                      <div className="sub-menu">
+                        {menu.submenu.length === 0
+                          ? null
+                          : menu.submenu.map((sub_menu) => {
+                              return (
+                                <Link
+                                  to={sub_menu.sub_link}
+                                  className="menu-group"
+                                  key={sub_menu.id}
+                                >
+                                  {sub_menu.sub_name}
+                                </Link>
+                              );
+                            })}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
