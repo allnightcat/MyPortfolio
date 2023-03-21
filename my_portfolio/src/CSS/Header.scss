@@ -41,6 +41,9 @@ header {
       height: inherit;
       justify-content: space-between;
 
+      .logo p {
+        width: 220px;
+      }
       .navigation {
         display: none;
       }
@@ -58,6 +61,57 @@ header {
             width: 30px;
             margin-right: 30px;
             cursor: pointer;
+          }
+        }
+
+        .mobile-menu-list {
+          position: fixed;
+          width: 100%;
+          right: 0;
+          top: 81px;
+          background-color: #f6f6f6;
+          height: calc(100% - 81px);
+
+          div.mobile-lang-box {
+            line-height: 80px;
+            margin: 0 40px;
+            text-align: right;
+            a {
+              img {
+                width: 20px;
+                height: 20px;
+                margin: 3px;
+              }
+            }
+          }
+
+          .mobile-menu-box {
+            .main-menu {
+              border-top: 1px solid #e6e6e6;
+              text-align: left;
+              font-weight: 500;
+              cursor: pointer;
+              padding: 15px 0 15px 50px;
+              font-size: 1.1rem;
+
+              &.one-menu {
+                display: block;
+              }
+            }
+
+            .sub-menu {
+              display: flex;
+              flex-direction: column;
+
+              .menu-group {
+                background-color: #fff;
+                border-top: 1px solid #e6e6e6;
+                padding: 15px 0 15px 50px;
+                text-align: left;
+                font-size: 1rem;
+                cursor: pointer;
+              }
+            }
           }
         }
       }

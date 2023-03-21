@@ -107,7 +107,11 @@ const Header = () => {
                     return (
                       <div className="mobile-menu" key={menu.id}>
                         {menu.submenu.length === 0 ? (
-                          <Link to={menu.link} className="main-menu one-menu">
+                          <Link
+                            to={menu.link}
+                            className="main-menu one-menu"
+                            onClick={showMenuList}
+                          >
                             {menu.name}
                           </Link>
                         ) : (
@@ -128,6 +132,7 @@ const Header = () => {
                                       to={sub_menu.sub_link}
                                       className="menu-group"
                                       key={sub_menu.id}
+                                      onClick={showMenuList}
                                     >
                                       {sub_menu.sub_name}
                                     </Link>
