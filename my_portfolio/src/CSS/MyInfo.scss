@@ -1,0 +1,73 @@
+@import "./utils";
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .banner-title {
+    flex: 1;
+    text-align: center;
+
+    .banner-text {
+      text-align: left;
+      width: 440px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.box {
+  padding: 50px 200px;
+  &:nth-child(even) {
+    background-color: #f7f9fc;
+  }
+  &:nth-child(odd) {
+    background-color: #fff;
+  }
+  .box-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #6c63ff;
+  }
+
+  .box-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .info-box {
+      margin: 0 20px;
+    }
+  }
+}
+
+@include desktop {
+  .banner {
+    .banner-title {
+      h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        width: 440px;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+      div {
+        line-height: 2.5rem;
+        font-size: 1.2rem;
+      }
+    }
+    .banner-img {
+      padding: 70px;
+    }
+    .banner-img img {
+      max-height: 350px;
+    }
+  }
+}
+
+@include tablet {
+}
+
+@include mobile {
+}
